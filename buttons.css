@@ -19,3 +19,17 @@
 .btn__green:hover, .btn__green:focus {
     background: rgba(28, 160, 8, 0.8);
 }
+.btn__red{
+    background: rgb(255, 15, 51);
+    color:#fff;
+}
+.btn__red:hover, .btn__red:focus {
+    background: rgb(255, 15, 51, 0.8);
+}
+.btn__blue {
+    background: rgba(30, 144, 255,1);
+    color:#fff;
+}
+.btn__blue:hover, .btn__blue:focus {
+    background: rgba(30, 144, 255,0.8);
+}
