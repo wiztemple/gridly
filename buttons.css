@@ -1,0 +1,21 @@
+.btn {
+    padding: 10px 20px;
+    border: 0px;
+    border-radius:3px;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.btn__normal {
+    background: #eee;
+}
+.btn__normal:hover, .btn__normal:focus {
+    background: #ddd;
+}
+.btn__green{
+    background: rgb(28, 160, 8);
+    color: #fff;
+}
+.btn__green:hover, .btn__green:focus {
+    background: rgba(28, 160, 8, 0.8);
+}
