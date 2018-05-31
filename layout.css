@@ -10,6 +10,8 @@ body{
 }
 .row{
     display: grid;
+    grid-column-gap: 1em;
+    margin-bottom: 1em;
 }
 .row-2{
     display: grid;
@@ -17,8 +19,10 @@ body{
     grid-template-columns:repeat(2, 1fr);
     /* grid-column-gap: 1em;
     grid-row-gap: 1em; */
+    /* grid-column-gap: 1em;
+    grid-row-gap: 10px; */
     grid-column-gap: 1em;
-    row-gap: 1em;
+    margin-bottom: 1em;
 }
 .row-3{
     display: grid;
@@ -27,7 +31,7 @@ body{
     /* grid-column-gap: 1em;
     grid-row-gap: 1em; */
     grid-column-gap: 1em;
-    row-gap: 1em;
+    margin-bottom: 1em;
 }
 .row-4{
     display: grid;
@@ -35,6 +39,87 @@ body{
     grid-template-columns:repeat(4, 1fr);
     /* grid-column-gap: 1em;
     grid-row-gap: 1em; */
-    grid-gap: 1em;
-    -webkit-grid-gap: 1em;
+    grid-column-gap: 1em;
+    margin-bottom: 1em;
 }
+.row-5{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns:repeat(5, 1fr);
+    /* grid-column-gap: 1em;
+    grid-row-gap: 1em; */
+    grid-column-gap: 1em;
+    margin-bottom: 1em;
+}
+.row-6{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns:repeat(6, 1fr);
+    /* grid-column-gap: 1em;
+    grid-row-gap: 1em; */
+    grid-column-gap: 1em;
+    margin-bottom: 1em;
+}
+
+/*media queries*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .row-2{
+        
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows: 100%;
+        grid-column-gap: 1em;
+        margin-bottom: 1em;
+    }
+   .row-2 > column {
+    width: 100%;
+   }
+   
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .column{
+        width: 100% !important;
+    }
+     
+    
+}
+
+
+@media (min-width: 1281px) {
+  
+
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+
+    
+  }
+  
+
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    
+  }
+  
