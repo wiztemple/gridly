@@ -1,0 +1,8 @@
+nav navbar
+brand - company/product name/logo
+navbar-left - left side of the navigational bar 
+navbar-right - right side of the navigational bar 
+navbar-center - mid side of the navigational bar 
+fixed-top - the navbar is positionally fixed and relative to the vieport 
+navbar-item - direct child of navbar-left/navbar-right/navbar-center 
+is-active - currently highlighted navbar-item 

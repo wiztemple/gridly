@@ -1,0 +1,144 @@
+
+
+.navbar {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content:space-between;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Lobster Two', cursive;
+}
+.brand > a {
+text-decoration: none;
+color: #333;
+}
+.logo {
+  width: 80px;
+  height: 30px;
+}
+.brand-is-with-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.brand-is-with-bar > a:nth-child(1) {
+  font-size: 50px;
+  margin-right: 10px;
+  margin-top: -7px;
+}
+.brand > .bar {
+  position: absolute;
+  display: none;
+}
+.navbar:nth-child(2) {
+  display: none;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+}
+.navbar > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.navbar-left > .navbar-item {
+  color: #333;
+  padding: 20px 10px;
+}
+.navbar-left > .navbar-item:not(:first-child) {
+  color: #333;
+}
+.navbar-left > .navbar-item {
+  text-decoration: none;
+}
+/* .navbar-left > .navbar-item:hover {
+ background-color: #f8f8f8;
+} */
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar-right > .navbar-item {
+  color: #333;
+  padding: 20px 10px;
+}
+.navbar-right > .navbar-item:hover {
+ background-color: #eee;
+}
+.c-test {
+  height: 400px;
+  background-color: #eee;
+}
+/* .navbar-right > .navbar-item:not(:first-child) {
+
+} */
+
+/* Mobile first queries */
+/* Larger than mobile */
+/* @media (min-width: 400px) {
+ .navbar {
+    display: none;
+  }
+} */
+
+/* Larger than phablet */
+/* @media (min-width: 550px) {
+ 
+} */
+
+/* Larger than tablet */
+/* @media (min-width: 750px) {
+  
+} */
+
+/* Larger than desktop */
+/* @media (min-width: 1000px) {} */
+
+/* Larger than Desktop HD */
+/* @media (min-width: 1200px) {} */
+
+@media screen and (max-width: 768px) {
+.navbar {
+  flex-direction: column;
+  height: auto;
+}
+.navbar > .container {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-left {
+  flex-direction: column;
+}
+.navbar-left > .navbar-item, .navbar-right > .navbar-item {
+  padding: 10px 20px;
+}
+.navbar-left > .navbar-item:hover, .navbar-right > .navbar-item:hover {
+  background-color: aqua;
+}
+.navbar-right {
+  flex-direction: column; 
+}
+.brand {
+  padding: 10px;
+}
+
+.brand > .bar {
+  display: block;
+  right: 3%;
+  top: -7px;
+  color: #777;
+  font-size: 45px;
+}
+.barnd > .bar:hover {
+  color: #333;
+  transition: all ease-in .2s;
+}
+}
