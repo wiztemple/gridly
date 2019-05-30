@@ -1,16 +1,23 @@
+:root {
+  --app-bg-color: #fff;
+  --app-link-color: #1e90ff;
+  --dark-skyblue: #0c76e0;
+  --darkest-black: #000;
+  --text-black: #444;
+  --dark-gray: #777;
+  --light-gray: #eee;
+}
+
 html {
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--app-bg-color);
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *, *::before, *::after {

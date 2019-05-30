@@ -1,0 +1,20 @@
+/*form*/
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  background-color: var(--app-bg-color);
+  color: #495057;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid var(--light-gray);
+  border-radius: .25rem;
+}
+.form-control:focus {
+  border-color: #ddd;
+  outline: none;
+}
+.form-control::placeholder {
+  color: #ddd;
+  font-weight: 100;
+}

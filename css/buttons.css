@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: .375rem .75rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.button-black { background-color: var(--text-black); color: var(--app-bg-color); }
+.button-rounded { border-radius: 1.875rem; }
+.button-default { background-color: #eee; color: var(--text-black); }
+.button-outline { border: 1px solid var(--text-black); }
+.button-outline:hover { border-color: var(--dark-gray); }
